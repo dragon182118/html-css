@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(18, 18, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1{
+    color: rgb(149, 149, 240);  
+}
+h2{
+    color: rgb(67, 84, 235);
+}
+p{
+    color: white;
+}
+#first{
+    color: rgb(0, 0, 0);
+    background-color: rgb(208, 211, 255);
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.basico{
+    color: rgb(161, 241, 201);
+}
+.avancado{
+    color: rgb(2, 163, 168);
+}
+.forte{
+    text-decoration: underline;
+}

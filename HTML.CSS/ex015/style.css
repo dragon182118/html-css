@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    background-color: lightslategray;
+    font-family: Arial;
+}
+h1{
+    background-color: aqua;
+    color: blue;
+}
+h2{
+    background-color: rgb(84, 97, 97);
+    color: yellow;
+}
+p{
+    color: lightgreen;
+}

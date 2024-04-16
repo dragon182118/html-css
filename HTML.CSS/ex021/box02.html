@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-image: linear-gradient(-25deg, #FC2D1C, #FA9B7B);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        #menu{
+            background-color: #42504A;
+            border: solid 3px;
+            padding: 2px;
+            margin: auto;
+            height: 120px;
+            color: #51A581; 
+        }
+        #menu > p{
+            text-align: right; 
+        }
+        #menu > nav > a{
+           padding: 0px 50px 0px 0px; 
+        }
+        h1{
+           margin: 10px 0px;
+           text-shadow: 2px 2px rgba(0, 0, 0, 0.521);
+        }
+        h2, h3{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        main{
+            background-color: white;
+            height: auto;
+            width: auto;
+            margin: 10px;
+            border-radius: 2px;
+        }
+        section {
+            padding: 10px;
+        }
+        section > article{
+            width: 50%;
+        }
+        #informacoes{
+            background-color: #FA9B7B;
+            width: 50%;
+            border-radius: 20px 7px;
+            padding: 5px;
+        }
+        #informacoes > h3{
+            margin: 0px;
+        }
+        article > aside{
+            text-align: right;
+        }
+        #final{
+            background-color: rgb(27, 27, 27);
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+            text-decoration: underline;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.548);
+        }
+        #final > p{
+            margin: 3px;
+        }
+        img{
+            width: 200px;
+            display: inline;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header id="menu">
+        <h1>Agrupando tags semânticas</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+        <p>Bla bla bla bla...</p>
+    </header>
+    <main id="conteudo">
+        <section id="noticias">
+            <article>
+                <h2>fofocas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt maiores sint est laudantium molestias dolores et nulla, unde fugiat eaque qui praesentium necessitatibus tempora eveniet laborum? Temporibus, consequuntur quibusdam.</p>
+            </article>
+            <article style="width: 100%;">
+                <h2>mortes</h2>
+                <p style="width:50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, provident quod incidunt accusantium assumenda eos itaque tempora ex est aliquam repellat, cupiditate, nesciunt inventore consequuntur nulla saepe quo odio.</p>
+                <aside>
+                    <img src="images/mort.jpg" alt="Imagem de mortes">
+                </aside>
+            </article>
+            <aside id="informacoes">
+                <h3>Mais informações sobre as notícias em:</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+    </main>
+    <footer id="final">
+        <p> Desenvolvido por Jonas</p>
+    </footer>
+    
+</body>
+</html>
