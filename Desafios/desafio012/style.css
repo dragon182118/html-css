@@ -51,6 +51,7 @@ main {
 article section {
     padding: 50px 0px 50px 5vh;
     margin-bottom: 20px;
+    width: auto;
 }
 #s2 {   
     background: url('imagens/background001.jpg') right no-repeat fixed;
