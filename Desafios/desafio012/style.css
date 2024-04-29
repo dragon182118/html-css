@@ -9,6 +9,10 @@
     margin: 0px;
     padding: 0px;
 }
+html, body{
+    min-height: 100vh;
+    background-color: lightgray;
+}
 /* Começo do Header */
 header {
     height: 25vw;
@@ -26,6 +30,10 @@ header h1 {
     width: 70vw;
     height: 9vw;
     font-size: 7vw;
+    font-variant: small-caps;
+    line-height: 1.5em;
+    
+    
 }
 #pHeader{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,13 +53,11 @@ main {
     font-family: 'Sriracha';
     font-size: 3.5vw;
     line-height: 2em;
-    margin-top: 30px;
-    
 }
 article section {
-    padding: 50px 0px 50px 5vh;
-    margin-bottom: 20px;
+    padding: 10vh 0px 10vh 5vw;
     width: auto;
+    background-color: white;
 }
 #s2 {   
     background: url('imagens/background001.jpg') right no-repeat fixed;
