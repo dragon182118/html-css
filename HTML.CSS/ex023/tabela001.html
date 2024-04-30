@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            background-color: rgba(127, 255, 212, 0.493);
+            height: 300px;   
+        }
+        td{
+            border: 1px solid black; 
+            text-align: center;
+            vertical-align: middle;  
+        }
+        td:hover{
+            background-color: black;
+            color: white;
+            transition-duration: 0.5s;
+        }
+        .price {
+            background-color: lightgreen;
+        }
+        .price::before{
+            content:"$";
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!-- HIERARQUIA DE TABELAS SIMPLES-->
+    <!-- table
+            table row
+                table header
+                table data 
+    -->
+    <table>
+        <tr>
+            <td class="price">100</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="price">200</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="price">300</td>
+        </tr>                               
+    </table>
+</body>
+</html>
