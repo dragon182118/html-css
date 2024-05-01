@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            width: 400px;
+        }
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .ca{
+            background-color: blue;
+            transition-duration: 0.5s;
+            color: white;
+        }
+        .cb{
+            background-color: yellow;
+            transition-duration: 0.5s;
+            color: white;
+        }
+        .cc{
+            background-color: red;
+            transition-duration: 0.5s;
+            color: white;
+        }
+        col.cd{
+            background-color: green;
+            color: white;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="ca">
+            <col class="cb">
+            <col class="cc">
+            <col class="cd">
+        </colgroup>
+        <caption>Cadrastro na Loja</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>18</td>
+                <td>M</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>18</td>
+                <td>M</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>18</td>
+                <td>M</td>
+                <td>Programador</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
