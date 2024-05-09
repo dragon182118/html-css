@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <p>
+        <a href="#" onclick="clic()">Clique em min</a>
+        <button type="button" id="but">LIMPA SAPOHA</button>
+    </p>
+    <div id="sapu"></div>
+    <script>
+        let s = document.getElementById("sapu");
+        function clic() {
+            
+            s.innerHTML += "<p>Tu Crico? >:C</p>"
+        }
+        bu = document.getElementById('but').addEventListener("click", () => {
+            s.innerHTML = '';
+        })
+    </script>
+</body>
+</html>
