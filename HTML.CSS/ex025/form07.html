@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <h1>NÃO ACABA MAAAAAAAAAAAAAAAAIIIIIIIIIIIISSSSSSSSS</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="est">Estado:</label>
+            <select name="est" id="est">
+                <optgroup label="Estados">
+                    <option value="MG" selected>Minas Gerais</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="pr">Profissão:</label>
+            <input type="text" name="pr" id="pr" placeholder="escreva sua profissão" list="prl">
+            <datalist id="prl">
+                <option value="PROF">Professor</option>
+                <option value="Dev">Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="tmsg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
