@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sgd</title>
+</head>
+<body>
+    <h1>mdsssssssss</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="idade">Data de nascimento</label>
+            <input type="number" name="i" id="idade" min="1900" max="2100" required oninput="ade.innerHTML = calcIdade(idade.value)"><br>
+            <label for="ade"></label>
+            <output id="ade">0</output>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade(i) {
+            let y = new Date().getFullYear()
+            return (y - i);
+        }
+    </script>
+</body>
+</html>
