@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    header {
+        border: 2px solid black;
+    }
+    main{
+        width: 90vw;
+        line-height: 1.5em;
+    }
+    article p {
+        font-weight: bold;
+    }
+    main::after {
+        text-align: center;
+        content: "impressão feita através do site de www.github.com/dragon182118";
+        text-decoration: overline;
+    }
+
+    #img {display: none;}
+    .hide {display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    header li {
+        background-color: rgb(68, 68, 68);
+        color: white;
+        display: inline-block;
+        padding: 10px;
+    }
+    #menu {text-align: left; background-color: gray}
+    #img {display: none;}
+    .hide {display: inline-block;}
+    main {
+        width: 70vw;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    header li {
+        background-color: rgb(68, 68, 68);
+        color: white;
+        display: inline-block;
+        padding: 10px;
+    }
+    #menu {text-align: left; background-color: gray}
+    #img {display: none;}
+    .hide {display: inline-block;}
+    main {
+        width: 65vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    header li {
+        background-color: rgb(68, 68, 68);
+        color: white;
+        display: inline-block;
+        padding: 10px;
+    }
+    #menu {text-align: left; background-color: gray}
+    #img {display: none;}
+    .hide {display: inline-block;}
+    main {
+        width: 60vw;
+    }
+}
