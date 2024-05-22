@@ -1,3 +1,76 @@
 @charset "UTF-8";
 
 /* Demais estilos */
+/* Typical Device Breakpoints :
+---------------------------------
+telas menores: 320 - 480px
+celular: 481px - 768px
+tablet: 769px - 1024px
+desktop: 1025px - 1200px
+telas maiores: 1201px - infinity
+---------------------------------
+*/
+@media print { /*Impressão*/
+    /*background n importa*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        width: 90vw;
+    }
+    main {
+        border: 2px solid black;
+    }
+    main > h1 {
+        color: black;
+        text-shadow: none;
+    }
+    main::after {
+        text-align: center;
+        content: "impressão feita através do site de www.github.com/dragon182118";
+        text-decoration: overline;
+    }
+    img#phone {display: none;}
+    img#print {display: block;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){ /*Tablet*/
+    
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){ /*Desktop*/
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+        width: 50vw;
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+
+}
+@media screen and (min-width: 1200px){ /*Telas maiores*/
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        width: 50vw;
+    }
+
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
