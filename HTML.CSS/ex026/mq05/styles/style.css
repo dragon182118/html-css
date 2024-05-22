@@ -27,6 +27,10 @@ header li {
     color: white;
     padding: 10px;
     text-align: center;
+    border: 1px solid gray;
+}
+header li:hover {
+    background-color: gray;
 }
 /* Header F */
 
@@ -44,6 +48,7 @@ main h2 {
 main p {
     text-indent: 10px;
     margin: 10px;
+    text-align: justify;
 }
 article{
     padding: 10px;

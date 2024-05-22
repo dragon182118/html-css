@@ -31,6 +31,9 @@
         display: inline-block;
         padding: 10px;
     }
+    header li:hover {
+        background-color: #000000;
+    }
     #menu {text-align: left; background-color: gray}
     #img {display: none;}
     .hide {display: inline-block;}
@@ -45,6 +48,9 @@
         display: inline-block;
         padding: 10px;
     }
+    header li:hover {
+        background-color: #000000;
+    }
     #menu {text-align: left; background-color: gray}
     #img {display: none;}
     .hide {display: inline-block;}
@@ -58,6 +64,9 @@
         color: white;
         display: inline-block;
         padding: 10px;
+    }
+    header li:hover {
+        background-color: #000000;
     }
     #menu {text-align: left; background-color: gray}
     #img {display: none;}
