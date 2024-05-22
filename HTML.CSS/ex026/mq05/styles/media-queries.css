@@ -24,7 +24,7 @@
     .hide {display: none;}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px){
     header li {
         background-color: rgb(68, 68, 68);
         color: white;
@@ -39,39 +39,5 @@
     .hide {display: inline-block;}
     main {
         width: 70vw;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-    header li {
-        background-color: rgb(68, 68, 68);
-        color: white;
-        display: inline-block;
-        padding: 10px;
-    }
-    header li:hover {
-        background-color: #000000;
-    }
-    #menu {text-align: left; background-color: gray}
-    #img {display: none;}
-    .hide {display: inline-block;}
-    main {
-        width: 65vw;
-    }
-}
-@media screen and (min-width: 1200px){
-    header li {
-        background-color: rgb(68, 68, 68);
-        color: white;
-        display: inline-block;
-        padding: 10px;
-    }
-    header li:hover {
-        background-color: #000000;
-    }
-    #menu {text-align: left; background-color: gray}
-    #img {display: none;}
-    .hide {display: inline-block;}
-    main {
-        width: 60vw;
     }
 }
