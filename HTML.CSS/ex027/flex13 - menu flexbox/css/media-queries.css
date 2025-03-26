@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    html {
+        width: 90vw;
+    }
+    header {
+        color: black;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        text-shadow: none;
+        flex: 0 0 300px;
+    }
+
+    ol li {
+        display: inline-block;
+    }
+    main::after {
+        text-align: center;
+        content: "impressão feita através do site de www.github.com/dragon182118";
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    
+    header {
+        color: white;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        flex: 0 0 300px;
+        text-align: start;
+    }
+    
+    ol li {
+        display: inline-block;
+        
+    }
+}
